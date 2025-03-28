@@ -8,13 +8,20 @@ ul {
     list-style-type: none;
 }
 
+
+li {
+    margin-bottom: 10px;
+}
+
 a {
     text-decoration: none;
+    color: #007bff;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    line-height: 1.6;
     background-color: #9D00FF;
 }
 
@@ -22,5 +29,42 @@ body {
     max-width: 1100px;
     border-radius: 5px;
     margin: 150px auto;
-    background-color: #f8f8f8;
+    margin-bottom: 15px;
+    padding: 70px 60px;
+    background-color: #f8fafe;
+}
+
+.card {
+    /* adding flex 1 so they are all the same size */
+    flex: 1;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    background: #f8f8f8;
+    color: #333;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.card-pro h2 {
+ background: linear-gradient(90deg, rgba(194,227,225,1) 13%, rgba(180, 118, 254, 1) 100%);
+        color: #fff;
+}
+
+.card-enterprise h2 {
+    background: linear-gradient(90deg, rgba(255, 177,194,1) 13%, rgba(255, 203, 114, 1) 100%);
+    color: #333;
 }
